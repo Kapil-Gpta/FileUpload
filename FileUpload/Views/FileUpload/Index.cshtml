@@ -1,0 +1,9 @@
+﻿@model object
+
+@{
+    ViewBag.Title = "FileUpload Results";
+    Layout = "_Layout";
+}
+
+<b>Results of upload : <br></b>
+<b>@Html.Raw(@ViewBag.Message.Replace(Environment.NewLine, "<br/>"))</b>

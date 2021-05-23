@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Login</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="SubmitDetails">
+    <table>
+        <tr>
+            <td>User ID: </td>
+            <td><input type="text" id="txtUserId" name="UserId"/></td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td><input type="text" id="txtPassword" name="Password"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+    <hr/>
+</form>
+</body>
+</html>
